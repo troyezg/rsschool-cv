@@ -76,7 +76,7 @@ console.error('Произошла ошибка:', error);
 ```
 * #### This is [another test project](https://github.com/troyezg/another-test-project) that i did for another job. It was also created from figma's design, but this time it was pretty simple. The only difficulty here was the implementation of the progress bar, which had to be done using the css variable.
 
-```html
+```
 <div class="showcase">
 	<div class="mainframe">
 		<button class="openchecklist" id="openchecklist"><p class="buttontext">Открыть чеклист</p></button>
@@ -94,7 +94,9 @@ console.error('Произошла ошибка:', error);
 	</div>
 </div>
 ```
+
 * #### Currently im working on the multipage website for my graduate work using HTML5, CSS, JavaScript, Node.js, MySQL, React.js. This site is not ready yet, so it doesn't have a GitHub page yet, but i can show you some code.
+
 ```Javascript
 try {
   document.addEventListener('DOMContentLoaded', function() {
@@ -115,6 +117,7 @@ try {
   console.error(error);
 }
 ```
+
 # Education
  #### At the moment I am finishing my studies at USPU with a specialization in Information Systems and Technologies.
 # Languages
