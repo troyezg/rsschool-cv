@@ -6,7 +6,7 @@
  * #### Telegram: [_@troyez_](t.me/troyez)
  * #### GitHub: [_@troyezg_](https://github.com/troyezg)
 # About me
-#### Some about me part gonna be there.
+#### I have been interested in programming and especially web development for quite a long time. However, most of my knowledge was acquired on my own, which is why there are many gaps. In order to fill these knowledge gaps and learn React, I decided to take the Rolling Scopes School courses.
 # Skills
  * #### Programming languages: C#, C++, Java, Python, JavaScript, HTML, CSS, Node, PHP, MySQL, VBA
  * #### Frameworks and libraries: Vue.js, Express.js, MySQL.js
