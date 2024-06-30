@@ -131,4 +131,5 @@ try {
 
 # Languages #
 * #### English Language: ####
+
      #### I have been learning English since first grade because my school focused on teaching English. At the moment i know English on the B1 level. I can freely understand english while watching some video's or reading some text's. Sometimes I have to read documentation in English, which is quite simple for me. ####
