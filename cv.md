@@ -75,7 +75,8 @@ console.error('Произошла ошибка:', error);
 }
 ```
 * #### This is [another test project](https://github.com/troyezg/another-test-project) that i did for another job. It was also created from figma's design, but this time it was pretty simple. The only difficulty here was the implementation of the progress bar, which had to be done using the css variable.
-```HTML
+
+```html
 <div class="showcase">
 	<div class="mainframe">
 		<button class="openchecklist" id="openchecklist"><p class="buttontext">Открыть чеклист</p></button>
