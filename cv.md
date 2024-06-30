@@ -105,7 +105,7 @@ console.error('Произошла ошибка:', error);
 
 * #### Currently im working on the multipage website for my graduate work using HTML5, CSS, JavaScript, Node.js, MySQL, React.js. This site is not ready yet, so it doesn't have a GitHub page yet, but i can show you some code. ####
 
-```Javascript
+```javascript
 try {
   document.addEventListener('DOMContentLoaded', function() {
     fetch('http://localhost/ingridients')
@@ -127,8 +127,8 @@ try {
 ```
 
 # Education #
- #### At the moment I am finishing my studies at USPU with a specialization in Information Systems and Technologies. ####
+#### At the moment I am finishing my studies at USPU with a specialization in Information Systems and Technologies. ####
 
 # Languages #
- * #### English Language: ####
+* #### English Language: ####
      #### I have been learning English since first grade because my school focused on teaching English. At the moment i know English on the B1 level. I can freely understand english while watching some video's or reading some text's. Sometimes I have to read documentation in English, which is quite simple for me. ####
