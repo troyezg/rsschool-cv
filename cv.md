@@ -15,7 +15,7 @@
  * #### Motion Design: Adobe Photoshop, Adobe illustrator, Figma, Davinci Resolve ####
 
 # Code example's #
-#### This script allows you to add additional form by clicking "Add Step" button to add an additional step on the post loading page. ####\
+#### This script allows you to add additional form by clicking "Add Step" button to add an additional step on the post loading page. ####
 
 ```javascript
 try {
