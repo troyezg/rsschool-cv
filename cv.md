@@ -5,12 +5,15 @@
  * #### Mail: _ngsimonov@yandex.ru_
  * #### Telegram: [_@troyez_](t.me/troyez)
  * #### GitHub: [_@troyezg_](https://github.com/troyezg)
+
 # About me
-#### I have been interested in programming and especially web development for quite a long time. However, most of my knowledge was acquired on my own, which is why there are many gaps. In order to fill these knowledge gaps and learn React, I decided to take the Rolling Scopes School courses.
+#### I have been interested in programming and especially web development for quite a long time. However, most of my knowledge was acquired on my own, which is why there are many gaps. In order to fill these knowledge gaps and learn React, I decided to take the Rolling Scopes School courses. #
+
 # Skills
  * #### Programming languages: C#, C++, Java, Python, JavaScript, HTML, CSS, Node, PHP, MySQL, VBA
  * #### Frameworks and libraries: Vue.js, Express.js, MySQL.js
  * #### Motion Design: Adobe Photoshop, Adobe illustrator, Figma, Davinci Resolve
+
 # Code example's
 #### This script allows you to add additional form by clicking "Add Step" button to add an additional step on the post loading page.
 ```javascript
@@ -54,6 +57,7 @@ searchbar.addEventListener("keyup", function(event){
   console.error(error);
 }
 ```
+
 # Frontend Junior Developer expirience
 * #### [My first vue project](https://github.com/troyezg/vue-project) which i did as a test for the job. This project was created using figma's design and API to load cards into the feed. It takes me 3 days to code this project considering that i was learning vue and API while coding. However it was verry fun and interesting, i learned a lot of new by working on this project.
 ```javascript
@@ -120,6 +124,7 @@ try {
 
 # Education
  #### At the moment I am finishing my studies at USPU with a specialization in Information Systems and Technologies.
+ 
 # Languages
  * #### English Language:
      #### I have been learning English since first grade because my school focused on teaching English. At the moment i know English on the B1 level. I can freely understand english while watching some video's or reading some text's. Sometimes I have to read documentation in English, which is quite simple for me.
