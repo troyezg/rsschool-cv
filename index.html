@@ -17,7 +17,6 @@
         </div>
     </div>
 </header>
-
 <main>
     <div class="main-left">
         <h3>About me</h3>
@@ -40,7 +39,7 @@
                 console.error(error);
             }
         </code></pre>
-        <p>his script allows you to search for the posts with similar post name. By clicking enter you clearing the feed and sending the search information to API by calling lentaload function. </p>
+        <p>This script allows you to search for the posts with similar post name. By clicking enter you clearing the feed and sending the search information to API by calling lentaload function. </p>
         <pre><code>
             try {
                 var searchbar = document.getElementById("search");
@@ -52,7 +51,7 @@
                         posts = 10;
                         lentaload();
                     }
-                    if (searchbar.value == '' && event.key == "Backspace") {
+                    if (searchbar.value == '' &amp&amp event.key == "Backspace") {
                         const lentabodyid = document.getElementById("lentacontainer");
                         lentabodyid.innerHTML = '';
                         searchname = undefined;
@@ -135,9 +134,7 @@
             <li> Russian: Native</li>
         </ul>
     </div>
-
 </main>
-
 <footer>
  <a href="https://github.com/troyezg" class="github-block">
     <img class="github-block_gitlogo" src="github-mark.png">
@@ -148,7 +145,6 @@
     <img class="github-block_rsslogo" src="rs-school-logo.svg">
  </a>
 </footer>
-    
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
 <script>
