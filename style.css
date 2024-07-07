@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+header {
+    width: 1200px;
+    height: 180px;
+    background-color: #9fa8da;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+.header-aboutblock {
+
+    position: relative;
+    color: #101214;
+    width: 100%;
+    height: 180px;
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 50px;
+}
+
+.header-textblock {
+
+    position: relative;
+    color: #101214;
+    width: fit-content;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #e5e5e5;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #e5e5e5;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #101214;
+}
+
+p {
+    margin: 0;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #212121;
+    a {
+        text-decoration: none;
+        font-family: 'inter';
+        font-style: bold;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: red;
+    }
+}
+
+details {
+    margin: 0;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #212121;
+}
+
+.header-contacts {
+    position: relative;
+    order: 3;
+    width: 50%;
+    height: 136px;
+    filter: drop-shadow(0px 2px 4px rgba(16, 18, 20, 0.08));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-ava_image {
+    position: relative;
+    object-fit: cover;
+    border-radius: 500px;
+    width: 120px;
+    height: 120px;
+}
+
+main {
+    width: 1200px;
+    height: fit-content;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-left {
+    width: 70%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-right {
+    width: 30%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #212121;
+    
+    h3 {
+        color: #e5e5e5;
+    }
+    li {
+        color: #e5e5e5;
+    }
+}
+
+.main-right_contacts {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #212121;
+    margin: 5px;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        transition: color 0.7s ease-in-out;
+        color: #90caf9;
+    }
+}
+
+.example-image {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #9fa8da;
+    width: 1160px;
+    height: 50px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+    a {
+        text-decoration: none;
+    }
+}
+
+.github-block {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.github-block_gitlogo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.github-block_rsslogo {
+    position: relative;
+    width: auto;
+    height: 30px;
+}

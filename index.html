@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<link href="style.css" rel="stylesheet" type="text/css"/>    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+<header>
+    <div class="header-aboutblock">
+        <img class="header-ava_image" src="ava.jfif" alt="10">
+        <div class="header-textblock">
+            <h1>Nikita Simonov</h1>
+            <h2>Junior front-end developer</h2>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="main-left">
+        <h3>About me</h3>
+        <p>I have been interested in programming and especially web development for quite a long time. However, most of my knowledge was acquired on my own, which is why there are many gaps. In order to fill these knowledge gaps and learn React, I decided to take the Rolling Scopes School courses.</p>
+        <h3>Code example's</h3>
+        <p>This script allows you to add additional form by clicking "Add Step" button to add an additional step on the post loading page.</p>
+        <pre><code class="hljs language-js">
+            try {
+                const node5 = document.getElementById('addstepbutton');
+                var stepnubmer = 1;
+                document.addEventListener('click', function(d) {  
+                  if (node5.contains(d.target)) {
+                    const steps = document.getElementById("createpostcontainer");
+                    stepnubmer = stepnubmer + 1;
+                    console.log(stepnubmer);
+                    steps.insertAdjacentHTML( "beforeend", '<div class="addstepform"><textarea class="addstepformtext" id="addstepform' + stepnubmer +'" placeholder="Шаг ' + stepnubmer + ' "></textarea><input type="file" class="loadimagestep" id="loadimagestep' + stepnubmer + '"></div>');
+                  }
+                })
+            } catch (error) {
+                console.error(error);
+            }
+        </code></pre>
+        <p>his script allows you to search for the posts with similar post name. By clicking enter you clearing the feed and sending the search information to API by calling lentaload function. </p>
+        <pre><code>
+            try {
+                var searchbar = document.getElementById("search");
+                searchbar.addEventListener("keyup", function(event){
+                    if (event.key == "Enter") {
+                        const lentabodyid = document.getElementById("lentacontainer");
+                        lentabodyid.innerHTML = '';
+                        searchname = searchbar.value;
+                        posts = 10;
+                        lentaload();
+                    }
+                    if (searchbar.value == '' && event.key == "Backspace") {
+                        const lentabodyid = document.getElementById("lentacontainer");
+                        lentabodyid.innerHTML = '';
+                        searchname = undefined;
+                        posts = 10;
+                        lentaload();
+                    }
+                })
+            } catch (error) {
+              console.error(error);
+            }
+        </code></pre>
+        <h3>Frontend Junior Developer expirience</h3>
+        <p><a href="https://github.com/troyezg/vue-project">My first vue project</a>  which i did as a test for the job. This project was created using figma's design and API to load cards into the feed. It takes me 3 days to code this project considering that i was learning vue and API while coding. However it was verry fun and interesting, i learned a lot of new by working on this project.</p>
+        <details><summary>Show the code</summary>
+            <pre><code class="hljs language-js">
+                getCurrentPageData() {
+                    fetch(this.request)
+                    .then(response => response.json())
+                    .then(data => {
+                    this.TotalCards = (Object.keys(data.data)).length;
+                    if (data.meta.current_page <= data.meta.last_page) {
+                    this.CurrentPage = data;
+                    } else {
+                    page = data.meta.last_page;
+                    }
+                    this.PerPageCounter();
+                    })
+                    .catch(error => {
+                    console.error('Произошла ошибка:', error);
+                    });
+                }
+            </code></pre>
+        </details>
+        <img class="example-image" src="vue.png">
+        <p>This is <a href="https://github.com/troyezg/another-test-project"> another test project</a> that i did for another job. It was also created from figma's design, but this time it was pretty simple. The only difficulty here was the implementation of the progress bar, which had to be done using the css variable.</p>
+        <img class="example-image" src="htmlcss.png">
+        <p>Currently im working on the multipage website for my graduate work using HTML5, CSS, JavaScript, Node.js, MySQL, React.js. This site is not ready yet, so it doesn't have a GitHub page yet, but i can show you some code.</p>
+        <img class="example-image" src="diplom.png">
+        <details><summary>Show the code</summary>
+            <pre><code class="hljs language-js">
+                try {
+                    document.addEventListener('DOMContentLoaded', function() {
+                    fetch('http://localhost/ingridients')
+                        .then(response => response.json())
+                        .then(data => {
+                        y = data;
+                        for (var rollingcycling = 0; rollingcycling < y.length; rollingcycling++) {
+                            const ingridientlist = document.getElementById("rollinglist2");
+                            ingridientlist.innerHTML += '<div class="checkboxform"><input type="checkbox" id="ingridient-' + y[rollingcycling].id + '" style="accent-color: #E53935;"> <label for="ingridient-' + y[rollingcycling].id + '" class="rollinglist2text">'+ y[rollingcycling].i_name +'</label></div>';
+                        }  
+                        })
+                        .catch(error => {
+                        console.error('Произошла ошибка:', error);
+                        });
+                    }); 
+                } catch (error) {
+                    console.error(error);
+                }
+            </code></pre>
+        </details>
+    </div>
+    <div class="main-right">
+        <ul class="main-right_contacts"><h3>My contact information</h3>
+        <li> Number: +7 (919) 376-72-66 </li> 
+        <li> Mail: ngsimonov@yandex.ru </li>
+        <li> Telegram: <a href="https://t.me/troyez">@troyez</a> </li>
+        <li> GitHub: <a href="https://github.com/troyezg">@troyezg</a></li>
+        </ul>
+        <ul class="main-right_contacts"><h3>Skills</h3>
+            <li> Programming languages: C#, C++, Java, Python, JavaScript, HTML, CSS, Node, PHP, MySQL, VBA </li> 
+            <li> Frameworks and libraries: Vue.js, Express.js, MySQL.js </li>
+            <li> Motion Design: Adobe Photoshop, Adobe illustrator, Figma, Davinci Resolve </li>
+        </ul>
+        <ul class="main-right_contacts"><h3>Education</h3>
+            <li> Ural State Pedagogical University: Information systems and technologies</li> 
+            <li> Rsschool: JS/FE Pre-School</li>
+        </ul>
+        <ul class="main-right_contacts"><h3>Languages</h3>
+            <li> English: Upper intermediate</li> 
+            <li> Russian: Native</li>
+        </ul>
+    </div>
+
+</main>
+
+<footer>
+ <a href="https://github.com/troyezg" class="github-block">
+    <img class="github-block_gitlogo" src="github-mark.png">
+    <p>Visit my github page</p>
+ </a>
+ <p>Created 2024 ©</p>
+ <a href="https://rs.school/courses/javascript-preschool-ru">
+    <img class="github-block_rsslogo" src="rs-school-logo.svg">
+ </a>
+</footer>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>
+hljs.highlightAll();
+</script>
+</html>
