@@ -9,8 +9,6 @@
 <link href="style.css" rel="stylesheet" type="text/css"/>    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
 <header>
-    <div class="header-line">
-    </div>
     <div class="header-aboutblock">
         <img class="header-ava_image" src="ava.jfif" alt="10">
         <div class="header-textblock">
@@ -38,30 +36,30 @@
                     steps.insertAdjacentHTML( "beforeend", '<div class="addstepform"><textarea class="addstepformtext" id="addstepform' + stepnubmer +'" placeholder="Шаг ' + stepnubmer + ' "></textarea><input type="file" class="loadimagestep" id="loadimagestep' + stepnubmer + '"></div>');
                   }
                 })
-                } catch (error) {
-                  console.error(error);
-                }
+            } catch (error) {
+                console.error(error);
+            }
         </code></pre>
         <p>his script allows you to search for the posts with similar post name. By clicking enter you clearing the feed and sending the search information to API by calling lentaload function. </p>
         <pre><code>
             try {
-            var searchbar = document.getElementById("search");
-            searchbar.addEventListener("keyup", function(event){
-              if (event.key == "Enter") {
-                const lentabodyid = document.getElementById("lentacontainer");
-                lentabodyid.innerHTML = '';
-                searchname = searchbar.value;
-                posts = 10;
-                lentaload();
-              }
-              if (searchbar.value == '' && event.key == "Backspace") {
-                const lentabodyid = document.getElementById("lentacontainer");
-                lentabodyid.innerHTML = '';
-                searchname = undefined;
-                posts = 10;
-                lentaload();
-              }
-            })
+                var searchbar = document.getElementById("search");
+                searchbar.addEventListener("keyup", function(event){
+                    if (event.key == "Enter") {
+                        const lentabodyid = document.getElementById("lentacontainer");
+                        lentabodyid.innerHTML = '';
+                        searchname = searchbar.value;
+                        posts = 10;
+                        lentaload();
+                    }
+                    if (searchbar.value == '' && event.key == "Backspace") {
+                        const lentabodyid = document.getElementById("lentacontainer");
+                        lentabodyid.innerHTML = '';
+                        searchname = undefined;
+                        posts = 10;
+                        lentaload();
+                    }
+                })
             } catch (error) {
               console.error(error);
             }
@@ -120,8 +118,8 @@
         <ul class="main-right_contacts"><h3>My contact information</h3>
         <li> Number: +7 (919) 376-72-66 </li> 
         <li> Mail: ngsimonov@yandex.ru </li>
-        <li> Telegram: @troyez_](t.me/troyez) </li>
-        <li> GitHub: @troyezg (https://github.com/troyezg) </li>
+        <li> Telegram: <a href="https://t.me/troyez">@troyez</a> </li>
+        <li> GitHub: <a href="https://github.com/troyezg">@troyezg</a></li>
         </ul>
         <ul class="main-right_contacts"><h3>Skills</h3>
             <li> Programming languages: C#, C++, Java, Python, JavaScript, HTML, CSS, Node, PHP, MySQL, VBA </li> 

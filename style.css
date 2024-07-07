@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body {
     display: flex;
     align-items: center;
@@ -13,25 +15,16 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
-
-.header-line {
-    position: relative;
-    width: 100%;
-    height: 4px;
-    left: 0px;
-    top: 0px;
-    order: 1;
-    background: #101214;
-}
 
 .header-aboutblock {
 
     position: relative;
     color: #101214;
     width: 100%;
-    height: 176px;
+    height: 180px;
     order: 2;
     display: flex;
     flex-direction: row;
@@ -50,7 +43,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -61,7 +54,7 @@ h1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    color: #101214;
+    color: #e5e5e5;
 }
 
 h2 {
@@ -71,14 +64,14 @@ h2 {
     font-weight: 400;
     font-size: 28px;
     line-height: 32px;
-    color: #101214;
+    color: #e5e5e5;
 }
 
 h3 {
     margin: 0;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 600;
     font-size: 24px;
     line-height: 28px;
     color: #101214;
@@ -86,7 +79,26 @@ h3 {
 
 p {
     margin: 0;
-    font-family: 'Arial';
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #212121;
+    a {
+        text-decoration: none;
+        font-family: 'inter';
+        font-style: bold;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: red;
+    }
+}
+
+details {
+    margin: 0;
+    font-family: 'inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -138,7 +150,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #e5e5e5;
+    background-color: #212121;
+    
+    h3 {
+        color: #e5e5e5;
+    }
+    li {
+        color: #e5e5e5;
+    }
 }
 
 .main-right_contacts {
@@ -148,13 +167,22 @@ main {
 
 li {
     margin: 0;
-    font-family: 'Arial';
+    font-family: 'inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     color: #212121;
     margin: 5px;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        transition: color 0.7s ease-in-out;
+        color: #90caf9;
+    }
 }
 
 .example-image {
@@ -172,6 +200,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: auto;
+    a {
+        text-decoration: none;
+    }
 }
 
 .github-block {
@@ -183,6 +214,9 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    a {
+        text-decoration: none;
+    }
 }
 
 .github-block_gitlogo {
