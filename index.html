@@ -29,14 +29,14 @@
         <p>This script allows you to add additional form by clicking "Add Step" button to add an additional step on the post loading page.</p>
         <pre><code class="hljs language-js">
             try {
-                const node5 = document.getElementById('addstepbutton');
+                const node5 = document.getElementById(&#x27;addstepbutton&#x27;);
                 var stepnubmer = 1;
-                document.addEventListener('click', function(d) {  
+                document.addEventListener(&#x27;click&#x27;, function(d) {  
                   if (node5.contains(d.target)) {
-                    const steps = document.getElementById("createpostcontainer");
+                    const steps = document.getElementById(&#x22;createpostcontainer&#x22;);
                     stepnubmer = stepnubmer + 1;
                     console.log(stepnubmer);
-                    steps.insertAdjacentHTML( "beforeend", '&ltdiv class="addstepform"&gt&lttextarea class="addstepformtext" id="addstepform' + stepnubmer +'" placeholder="Шаг ' + stepnubmer + ' "&gt&lt/textarea	&gt&ltinput type="file" class="loadimagestep" id="loadimagestep' + stepnubmer + '"&gt&lt/div&gt');
+                    steps.insertAdjacentHTML( &#x22;beforeend&#x22;, &#x27;&#x26;ltdiv class=&#x22;addstepform&#x22;&#x26;gt&#x26;lttextarea class=&#x22;addstepformtext&#x22; id=&#x22;addstepform&#x27; + stepnubmer +&#x27;&#x22; placeholder=&#x22;&#x428;&#x430;&#x433; &#x27; + stepnubmer + &#x27; &#x22;&#x26;gt&#x26;lt/textarea&#x9;&#x26;gt&#x26;ltinput type=&#x22;file&#x22; class=&#x22;loadimagestep&#x22; id=&#x22;loadimagestep&#x27; + stepnubmer + &#x27;&#x22;&#x26;gt&#x26;lt/div&#x26;gt&#x27;);
                   }
                 })
             } catch (error) {
@@ -46,26 +46,26 @@
         <p>This script allows you to search for the posts with similar post name. By clicking enter you clearing the feed and sending the search information to API by calling lentaload function. </p>
         <pre><code>
             try {
-                var searchbar = document.getElementById("search");
-                searchbar.addEventListener("keyup", function(event){
-                    if (event.key == "Enter") {
-                        const lentabodyid = document.getElementById("lentacontainer");
-                        lentabodyid.innerHTML = '';
-                        searchname = searchbar.value;
-                        posts = 10;
-                        lentaload();
-                    }
-                    if (searchbar.value == '' &amp&amp event.key == "Backspace") {
-                        const lentabodyid = document.getElementById("lentacontainer");
-                        lentabodyid.innerHTML = '';
-                        searchname = undefined;
-                        posts = 10;
-                        lentaload();
-                    }
+                var searchbar = document.getElementById(&#x22;search&#x22;);
+                searchbar.addEventListener(&#x22;keyup&#x22;, function(event){
+                  if (event.key == &#x22;Enter&#x22;) {
+                    const lentabodyid = document.getElementById(&#x22;lentacontainer&#x22;);
+                    lentabodyid.innerHTML = &#x27;&#x27;;
+                    searchname = searchbar.value;
+                    posts = 10;
+                    lentaload();
+                  }
+                  if (searchbar.value == &#x27;&#x27; &#x26;&#x26; event.key == &#x22;Backspace&#x22;) {
+                    const lentabodyid = document.getElementById(&#x22;lentacontainer&#x22;);
+                    lentabodyid.innerHTML = &#x27;&#x27;;
+                    searchname = undefined;
+                    posts = 10;
+                    lentaload();
+                  }
                 })
-            } catch (error) {
-              console.error(error);
-            }
+                } catch (error) {
+                  console.error(error);
+                }
         </code></pre>
         <h3>Frontend Junior Developer expirience</h3>
         <p><a href="https://github.com/troyezg/vue-project">My first vue project</a>  which i did as a test for the job. This project was created using figma's design and API to load cards into the feed. It takes me 3 days to code this project considering that i was learning vue and API while coding. However it was verry fun and interesting, i learned a lot of new by working on this project.</p>
@@ -73,48 +73,68 @@
             <pre><code class="hljs language-js">
                 getCurrentPageData() {
                     fetch(this.request)
-                    .then(response => response.json())
-                    .then(data => {
-                    this.TotalCards = (Object.keys(data.data)).length;
-                    if (data.meta.current_page &lt&lt data.meta.last_page) {
-                    this.CurrentPage = data;
+                    .then(response =&#x3E; response.json())
+                    .then(data =&#x3E; {
+                      this.TotalCards = (Object.keys(data.data)).length;
+                    if (data.meta.current_page &#x3C;= data.meta.last_page) {
+                      this.CurrentPage = data;
                     } else {
-                    page = data.meta.last_page;
+                      page = data.meta.last_page;
                     }
                     this.PerPageCounter();
                     })
-                    .catch(error => {
-                    console.error('Произошла ошибка:', error);
+                    .catch(error =&#x3E; {
+                    console.error(&#x27;&#x41F;&#x440;&#x43E;&#x438;&#x437;&#x43E;&#x448;&#x43B;&#x430; &#x43E;&#x448;&#x438;&#x431;&#x43A;&#x430;:&#x27;, error);
                     });
                 }
             </code></pre>
         </details>
         <img class="example-image" src="vue.png" alt="Vue page on github pages">
         <p>This is <a href="https://github.com/troyezg/another-test-project"> another test project</a> that i did for another job. It was also created from figma's design, but this time it was pretty simple. The only difficulty here was the implementation of the progress bar, which had to be done using the css variable.</p>
+        <details><summary>Show the code</summary>
+            <pre><code class="hljs language-html">
+                &#x3C;div class=&#x22;showcase&#x22;&#x3E;
+                &#x9;&#x3C;div class=&#x22;mainframe&#x22;&#x3E;
+                &#x9;&#x9;&#x3C;button class=&#x22;openchecklist&#x22; id=&#x22;openchecklist&#x22;&#x3E;&#x3C;p class=&#x22;buttontext&#x22;&#x3E;&#x41E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; &#x447;&#x435;&#x43A;&#x43B;&#x438;&#x441;&#x442;&#x3C;/p&#x3E;&#x3C;/button&#x3E;
+                &#x9;&#x9;&#x3C;div class=&#x22;eventname&#x22;&#x3E;
+                &#x9;&#x9;&#x9;&#x3C;p class=&#x22;eventtext&#x22;&#x3E;&#x427;&#x435;&#x43A;&#x43B;&#x438;&#x441;&#x442;&#x3C;/p&#x3E;
+                &#x9;&#x9;&#x3C;/div&#x3E;
+                &#x9;&#x9;&#x3C;p class=&#x22;bigtext&#x22;&#x3E;&#x412;&#x44B;&#x43F;&#x43E;&#x43B;&#x43D;&#x435;&#x43D;&#x43E;: 3 &#x438;&#x437; 7 &#x434;&#x435;&#x439;&#x441;&#x442;&#x432;&#x438;&#x439;&#x3C;/p&#x3E;
+                &#x9;&#x9;&#x3C;p class=&#x22;smalltext&#x22;&#x3E;&#x421;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x435;&#x435; &#x434;&#x435;&#x439;&#x441;&#x442;&#x432;&#x438;&#x435;: &#x421;&#x43E;&#x437;&#x432;&#x43E;&#x43D;&#x438;&#x442;&#x44C;&#x441;&#x44F; &#x441; &#x43A;&#x43B;&#x438;&#x435;&#x43D;&#x442;&#x43E;&#x43C; &#x434;&#x43E; 23.05.24 12:00&#x3C;/p&#x3E;
+                &#x9;&#x9;&#x3C;div class=&#x22;progressbarback&#x22; style=&#x22;--progress: 42%;&#x22;&#x3E;
+                &#x9;&#x9;&#x9;&#x3C;svg class=&#x22;svgblock&#x22;&#x3E;
+                &#x9;&#x9;&#x9;&#x9;&#x3C;circle class=&#x22;scale-progress&#x22; r=&#x22;29.5px&#x22; cy=&#x22;50%&#x22; cx=&#x22;50%&#x22;&#x3E;&#x3C;/circle&#x3E;
+                &#x9;&#x9;&#x9;&#x3C;/svg&#x3E;
+                &#x9;&#x9;&#x3C;/div&#x3E;
+                &#x9;&#x9;&#x3C;p class=&#x22;counter&#x22;&#x3E;3/7&#x3C;/p&#x3E;
+                &#x9;&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            </code></pre>
+        </details>
         <img class="example-image" src="htmlcss.png" alt="Html page on github pages">
         <p>Currently im working on the multipage website for my graduate work using HTML5, CSS, JavaScript, Node.js, MySQL, React.js. This site is not ready yet, so it doesn't have a GitHub page yet, but i can show you some code.</p>
-        <img class="example-image" src="diplom.png" alt="Diplom's site main page">
         <details><summary>Show the code</summary>
             <pre><code class="hljs language-js">
                 try {
-                    document.addEventListener('DOMContentLoaded', function() {
-                    fetch('http://localhost/ingridients')
-                        .then(response => response.json())
-                        .then(data => {
-                        y = data;
-                        for (var rollingcycling = 0; rollingcycling &lt y.length; rollingcycling++) {
-                            const ingridientlist = document.getElementById("rollinglist2");
-                            ingridientlist.innerHTML += '&ltdiv class="checkboxform"&gt&ltinput type="checkbox" id="ingridient-' + y[rollingcycling].id + '" style="accent-color: #E53935;"&gt &ltlabel for="ingridient-' + y[rollingcycling].id + '" class="rollinglist2text"&gt'+ y[rollingcycling].i_name +'&lt/label&gt&lt/div&gt';
-                        }  
+                    document.addEventListener(&#x27;DOMContentLoaded&#x27;, function() {
+                      fetch(&#x27;http://localhost/ingridients&#x27;)
+                        .then(response =&#x3E; response.json())
+                        .then(data =&#x3E; {
+                         y = data;
+                          for (var rollingcycling = 0; rollingcycling &#x3C; y.length; rollingcycling++) {
+                            const ingridientlist = document.getElementById(&#x22;rollinglist2&#x22;);
+                            ingridientlist.innerHTML += &#x27;&#x3C;div class=&#x22;checkboxform&#x22;&#x3E;&#x3C;input type=&#x22;checkbox&#x22; id=&#x22;ingridient-&#x27; + y[rollingcycling].id + &#x27;&#x22; style=&#x22;accent-color: #E53935;&#x22;&#x3E; &#x3C;label for=&#x22;ingridient-&#x27; + y[rollingcycling].id + &#x27;&#x22; class=&#x22;rollinglist2text&#x22;&#x3E;&#x27;+ y[rollingcycling].i_name +&#x27;&#x3C;/label&#x3E;&#x3C;/div&#x3E;&#x27;;
+                          }  
                         })
-                        .catch(error => {
-                        console.error('Произошла ошибка:', error);
+                        .catch(error =&#x3E; {
+                          console.error(&#x27;&#x41F;&#x440;&#x43E;&#x438;&#x437;&#x43E;&#x448;&#x43B;&#x430; &#x43E;&#x448;&#x438;&#x431;&#x43A;&#x430;:&#x27;, error);
                         });
                     }); 
-                } catch (error) {
+                  } catch (error) {
                     console.error(error);
-                }
+                  }
             </code></pre>
+            <img class="example-image" src="diplom.png" alt="Diplom's site main page">
         </details>
     </div>
     <div class="main-right">
