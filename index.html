@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"></link>
 <header>
     <div class="header-aboutblock">
-        <img class="header-ava_image" src="ava.jfif" alt="10">
+        <img class="header-ava_image" src="ava.jfif" alt="Nikita's avatar">
         <div class="header-textblock">
             <h1>Nikita Simonov</h1>
             <h2>Junior front-end developer</h2>
@@ -72,7 +72,7 @@
                     .then(response => response.json())
                     .then(data => {
                     this.TotalCards = (Object.keys(data.data)).length;
-                    if (data.meta.current_page <= data.meta.last_page) {
+                    if (data.meta.current_page &lt&lt data.meta.last_page) {
                     this.CurrentPage = data;
                     } else {
                     page = data.meta.last_page;
@@ -85,11 +85,11 @@
                 }
             </code></pre>
         </details>
-        <img class="example-image" src="vue.png">
+        <img class="example-image" src="vue.png" alt="Vue page on github pages">
         <p>This is <a href="https://github.com/troyezg/another-test-project"> another test project</a> that i did for another job. It was also created from figma's design, but this time it was pretty simple. The only difficulty here was the implementation of the progress bar, which had to be done using the css variable.</p>
-        <img class="example-image" src="htmlcss.png">
+        <img class="example-image" src="htmlcss.png" alt="Html page on github pages">
         <p>Currently im working on the multipage website for my graduate work using HTML5, CSS, JavaScript, Node.js, MySQL, React.js. This site is not ready yet, so it doesn't have a GitHub page yet, but i can show you some code.</p>
-        <img class="example-image" src="diplom.png">
+        <img class="example-image" src="diplom.png" alt="Diplom's site main page">
         <details><summary>Show the code</summary>
             <pre><code class="hljs language-js">
                 try {
@@ -98,7 +98,7 @@
                         .then(response => response.json())
                         .then(data => {
                         y = data;
-                        for (var rollingcycling = 0; rollingcycling < y.length; rollingcycling++) {
+                        for (var rollingcycling = 0; rollingcycling &lt y.length; rollingcycling++) {
                             const ingridientlist = document.getElementById("rollinglist2");
                             ingridientlist.innerHTML += '<div class="checkboxform"><input type="checkbox" id="ingridient-' + y[rollingcycling].id + '" style="accent-color: #E53935;"> <label for="ingridient-' + y[rollingcycling].id + '" class="rollinglist2text">'+ y[rollingcycling].i_name +'</label></div>';
                         }  
@@ -114,22 +114,22 @@
         </details>
     </div>
     <div class="main-right">
-        <ul class="main-right_contacts"><h3>My contact information</h3>
+        <ul class="main-right_contacts">My contact information
         <li> Number: +7 (919) 376-72-66 </li> 
         <li> Mail: ngsimonov@yandex.ru </li>
         <li> Telegram: <a href="https://t.me/troyez">@troyez</a> </li>
         <li> GitHub: <a href="https://github.com/troyezg">@troyezg</a></li>
         </ul>
-        <ul class="main-right_contacts"><h3>Skills</h3>
+        <ul class="main-right_contacts">Skills
             <li> Programming languages: C#, C++, Java, Python, JavaScript, HTML, CSS, Node, PHP, MySQL, VBA </li> 
             <li> Frameworks and libraries: Vue.js, Express.js, MySQL.js </li>
             <li> Motion Design: Adobe Photoshop, Adobe illustrator, Figma, Davinci Resolve </li>
         </ul>
-        <ul class="main-right_contacts"><h3>Education</h3>
+        <ul class="main-right_contacts">Education
             <li> Ural State Pedagogical University: Information systems and technologies</li> 
             <li> Rsschool: JS/FE Pre-School</li>
         </ul>
-        <ul class="main-right_contacts"><h3>Languages</h3>
+        <ul class="main-right_contacts">Languages
             <li> English: Upper intermediate</li> 
             <li> Russian: Native</li>
         </ul>
