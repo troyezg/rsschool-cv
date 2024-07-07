@@ -10,8 +10,8 @@
     </script>
 </head>
 <body>
-<link href="style.css" rel="stylesheet" type="text/css"></link>    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"></link>
+<link href="style.css" rel="stylesheet" type="text/css">   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
 <header>
     <div class="header-aboutblock">
         <img class="header-ava_image" src="ava.jfif" alt="Nikita's avatar">
@@ -36,7 +36,7 @@
                     const steps = document.getElementById("createpostcontainer");
                     stepnubmer = stepnubmer + 1;
                     console.log(stepnubmer);
-                    steps.insertAdjacentHTML( "beforeend", '<div class="addstepform"><textarea class="addstepformtext" id="addstepform' + stepnubmer +'" placeholder="Шаг ' + stepnubmer + ' "></textarea><input type="file" class="loadimagestep" id="loadimagestep' + stepnubmer + '"></div>');
+                    steps.insertAdjacentHTML( "beforeend", '&ltdiv class="addstepform"&gt&lttextarea class="addstepformtext" id="addstepform' + stepnubmer +'" placeholder="Шаг ' + stepnubmer + ' "&gt&lt/textarea	&gt&ltinput type="file" class="loadimagestep" id="loadimagestep' + stepnubmer + '"&gt&lt/div&gt');
                   }
                 })
             } catch (error) {
@@ -104,7 +104,7 @@
                         y = data;
                         for (var rollingcycling = 0; rollingcycling &lt y.length; rollingcycling++) {
                             const ingridientlist = document.getElementById("rollinglist2");
-                            ingridientlist.innerHTML += '<div class="checkboxform"><input type="checkbox" id="ingridient-' + y[rollingcycling].id + '" style="accent-color: #E53935;"> <label for="ingridient-' + y[rollingcycling].id + '" class="rollinglist2text">'+ y[rollingcycling].i_name +'</label></div>';
+                            ingridientlist.innerHTML += '&ltdiv class="checkboxform"&gt&ltinput type="checkbox" id="ingridient-' + y[rollingcycling].id + '" style="accent-color: #E53935;"&gt &ltlabel for="ingridient-' + y[rollingcycling].id + '" class="rollinglist2text"&gt'+ y[rollingcycling].i_name +'&lt/label&gt&lt/div&gt';
                         }  
                         })
                         .catch(error => {
