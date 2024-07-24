@@ -31,19 +31,19 @@
         <h3>Code example's</h3>
         <p>This script allows you to add additional form by clicking "Add Step" button to add an additional step on the post loading page.</p>
         <pre><code class="hljs language-js">
-            try {
-                const node5 = document.getElementById(&#x27;addstepbutton&#x27;);
-                var stepnubmer = 1;
-                document.addEventListener(&#x27;click&#x27;, function(d) {  
-                  if (node5.contains(d.target)) {
-                    const steps = document.getElementById(&#x22;createpostcontainer&#x22;);
-                    stepnubmer = stepnubmer + 1;
-                    console.log(stepnubmer);
-                    steps.insertAdjacentHTML( &#x22;beforeend&#x22;, &#x27;&#x26;ltdiv class=&#x22;addstepform&#x22;&#x26;gt&#x26;lttextarea class=&#x22;addstepformtext&#x22; id=&#x22;addstepform&#x27; + stepnubmer +&#x27;&#x22; placeholder=&#x22;&#x428;&#x430;&#x433; &#x27; + stepnubmer + &#x27; &#x22;&#x26;gt&#x26;lt/textarea&#x9;&#x26;gt&#x26;ltinput type=&#x22;file&#x22; class=&#x22;loadimagestep&#x22; id=&#x22;loadimagestep&#x27; + stepnubmer + &#x27;&#x22;&#x26;gt&#x26;lt/div&#x26;gt&#x27;);
-                  }
-                })
+          try {
+            const node5 = document.getElementById(&#x27;addstepbutton&#x27;);
+            var stepnubmer = 1;
+            document.addEventListener(&#x27;click&#x27;, function(d) {  
+              if (node5.contains(d.target)) {
+                const steps = document.getElementById(&#x22;createpostcontainer&#x22;);
+                stepnubmer = stepnubmer + 1;
+                console.log(stepnubmer);
+                steps.insertAdjacentHTML( &#x22;beforeend&#x22;, &#x27;&#x3C;div class=&#x22;addstepform&#x22;&#x3E;&#x3C;textarea class=&#x22;addstepformtext&#x22; id=&#x22;addstepform&#x27; + stepnubmer +&#x27;&#x22; placeholder=&#x22;&#x428;&#x430;&#x433; &#x27; + stepnubmer + &#x27; &#x22;&#x3E;&#x3C;/textarea&#x3E;&#x3C;input type=&#x22;file&#x22; class=&#x22;loadimagestep&#x22; id=&#x22;loadimagestep&#x27; + stepnubmer + &#x27;&#x22;&#x3E;&#x3C;/div&#x3E;&#x27;);
+              }
+            })
             } catch (error) {
-                console.error(error);
+              console.error(error);
             }
         </code></pre>
         <p>This script allows you to search for the posts with similar post name. By clicking enter you clearing the feed and sending the search information to API by calling lentaload function. </p>
