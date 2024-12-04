@@ -1,1 +1,1 @@
-# rsschool-cv
+https://troyezg.github.io/rsschool-cv/
